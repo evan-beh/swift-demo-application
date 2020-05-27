@@ -1,0 +1,20 @@
+PODS:
+  - ADCountryPicker (2.1.0)
+  - Alamofire (5.2.1)
+
+DEPENDENCIES:
+  - ADCountryPicker (~> 2.1.0)
+  - Alamofire (~> 5.2)
+
+SPEC REPOS:
+  trunk:
+    - ADCountryPicker
+    - Alamofire
+
+SPEC CHECKSUMS:
+  ADCountryPicker: 502cee76a30ea1c3834eb0df170ce635691655c9
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+
+PODFILE CHECKSUM: 8b4d4865e2e6762ba6208f9e63786260b7014188
+
+COCOAPODS: 1.8.4
