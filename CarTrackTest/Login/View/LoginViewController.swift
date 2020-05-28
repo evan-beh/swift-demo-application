@@ -7,75 +7,121 @@
 //
 
 import UIKit
+import ADCountryPicker
 
-class LoginViewController: UIViewController{
+
+class LoginViewController: BaseViewController {
+ 
   
     @IBOutlet weak var tableView: UITableView!
   
-    
     let viewModel = LoginViewModel()
+    let picker = ADCountryPicker()
+    
+    @IBOutlet weak var btnLoginClicked: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        viewModel.populateCellData()
-
+        setupView()
+        viewModel.fetchCellData()
         // Do any additional setup after loading the view.
     }
-
     
-      @IBAction func btnLoginClicked(_ sender: Any) {
-        
-        self.view.endEditing(true)
-        NSLog("%@", viewModel.arrDatas[0])
-      }
-    
-    
-        
-}
-   
-// MARK: HANDLING OF TABLE VIEW
-extension LoginViewController:  UITableViewDelegate, UITableViewDataSource
-{
-     
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.arrDatas.count
-        
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         
-            let model = viewModel.arrDatas[indexPath.row]
+    func setupView ()
+    {
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.setupPicker()
+        self.btnLoginClicked.addAction(for: .touchUpInside) { (btn) in
             
-            let cell = dequeueCellForType(cellIdentifier: model.key)
+            self.view.endEditing(true)
+        }
+    }
 
-            cell.model = model
+}
+    
+
+    
+extension LoginViewController: UITableViewDelegate, UITableViewDataSource {
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return viewModel.items.count
+   
+    }
+
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        
+        let cellModel = viewModel.items[indexPath.row]
+        
+        if (cellModel.type == CellType.CellTypeTxtField)
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell1") as! LoginTableViewCell
+            
+            cell.setModel(object: cellModel)
             
             return cell
-    }
-    
-    func dequeueCellForType(cellIdentifier:String) -> GeneralTableViewCell
-    {
-        
-        if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as? GeneralTableViewCell {
             
-            cell.txtField?.delegate = cell
-             return cell
-                 
-        } else {
-                   
-            tableView.register(GeneralTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-            let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! GeneralTableViewCell
-            cell.txtField?.delegate = cell
-             return cell
-                    
         }
-    }
+        else
+        {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell2") as! LoginTableViewCell
+            
+            cell.setModel(object: cellModel)
 
+            cell.btnOne.addAction(for: .touchUpInside) { (button) in
+                
+                let picker = ADCountryPicker()
+                let pickerNavigationController = UINavigationController(rootViewController: picker)
+                self.present(pickerNavigationController, animated: true, completion: nil)
+                picker.didSelectCountryClosure = { name, code in
+                    cell.btnOne.setTitle(name, for: .normal)
+                 self.dismiss(animated: true, completion: nil)
+                }
+
+            }
+            return cell
+            
+        }
+     
+    }
+}
+
+// MARK: SETUP PICKER VIEW
+
+extension LoginViewController {
     
+    func setupPicker ()
+    {
+          
+        self.picker.showCallingCodes = true
+
+        self.picker.showFlags = true
+            
+        self.picker.pickerTitle = "Select a Country"
+            
+        self.picker.defaultCountryCode = "US"
+
+        self.picker.forceDefaultCountryCode = false
+
+       self.picker.alphabetScrollBarTintColor = UIColor.black
+            
+       self.picker.alphabetScrollBarBackgroundColor = UIColor.clear
+            
+        self.picker.closeButtonTintColor = UIColor.black
+            
+        self.picker.font = UIFont(name: "Helvetica Neue", size: 15)
+            
+        self.picker.flagHeight = 40
+            
+        self.picker.hidesNavigationBarWhenPresentingSearch = true
+            
+        self.picker.searchBarBackgroundColor = UIColor.lightGray
+    }
+   
 }
 
     

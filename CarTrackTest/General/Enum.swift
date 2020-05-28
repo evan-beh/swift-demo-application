@@ -14,3 +14,12 @@ enum CellType {
     case CellTypeNone
 
 }
+
+
+enum UserFieldType {
+    case UserFieldTypeUserName
+    case UserFieldTypeCountry
+    case UserFieldTypePassword
+
+}
+
