@@ -10,16 +10,19 @@
 		352AA4C9CDB6467D92D64C8C /* Pods_CarTrackTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A113F29615BBBFD509D5B65 /* Pods_CarTrackTest.framework */; };
 		5FE886363FCAB036EC7138CD /* Pods_CarTrackTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92AA2A41A51F4A6C62610F3 /* Pods_CarTrackTestTests.framework */; };
 		E24783E771F9D939E8CEC80F /* Pods_CarTrackTest_CarTrackTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D92D2D53F509641724356 /* Pods_CarTrackTest_CarTrackTestUITests.framework */; };
+		F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */; };
+		F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */; };
+		F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */; };
+		F99FB7CA247E83C6007E0AD1 /* UserListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */; };
+		F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */; };
 		F9F9C01B247E3320005F23CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C01A247E3320005F23CA /* AppDelegate.swift */; };
 		F9F9C01D247E3320005F23CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C01C247E3320005F23CA /* SceneDelegate.swift */; };
-		F9F9C01F247E3320005F23CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C01E247E3320005F23CA /* ViewController.swift */; };
 		F9F9C022247E3320005F23CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F9C020247E3320005F23CA /* Main.storyboard */; };
 		F9F9C024247E3322005F23CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F9C023247E3322005F23CA /* Assets.xcassets */; };
 		F9F9C027247E3322005F23CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F9C025247E3322005F23CA /* LaunchScreen.storyboard */; };
 		F9F9C032247E3322005F23CA /* CarTrackTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C031247E3322005F23CA /* CarTrackTestTests.swift */; };
 		F9F9C03D247E3322005F23CA /* CarTrackTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C03C247E3322005F23CA /* CarTrackTestUITests.swift */; };
 		F9F9C04D247E33A7005F23CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C04C247E33A7005F23CA /* LoginViewController.swift */; };
-		F9F9C050247E372F005F23CA /* GeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C04F247E372F005F23CA /* GeneralTableViewCell.swift */; };
 		F9F9C054247E41A9005F23CA /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C053247E41A9005F23CA /* Enum.swift */; };
 		F9F9C056247E47CB005F23CA /* KeyValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C055247E47CB005F23CA /* KeyValueModel.swift */; };
 		F9F9C05A247E4F9D005F23CA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C059247E4F9D005F23CA /* LoginViewModel.swift */; };
@@ -52,10 +55,14 @@
 		CFE9791FFD3FB094CED431B5 /* Pods-CarTrackTest-CarTrackTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackTest-CarTrackTestUITests.release.xcconfig"; path = "Target Support Files/Pods-CarTrackTest-CarTrackTestUITests/Pods-CarTrackTest-CarTrackTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF67FFD3A0BA9657652AB516 /* Pods-CarTrackTest-CarTrackTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackTest-CarTrackTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-CarTrackTest-CarTrackTestUITests/Pods-CarTrackTest-CarTrackTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E92AA2A41A51F4A6C62610F3 /* Pods_CarTrackTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarTrackTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
+		F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingViewController.swift; sourceTree = "<group>"; };
+		F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		F9F9C017247E3320005F23CA /* CarTrackTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F9C01A247E3320005F23CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9F9C01C247E3320005F23CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9F9C01E247E3320005F23CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9F9C021247E3320005F23CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9F9C023247E3322005F23CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9F9C026247E3322005F23CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +74,6 @@
 		F9F9C03C247E3322005F23CA /* CarTrackTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTrackTestUITests.swift; sourceTree = "<group>"; };
 		F9F9C03E247E3322005F23CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9F9C04C247E33A7005F23CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F9F9C04F247E372F005F23CA /* GeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTableViewCell.swift; sourceTree = "<group>"; };
 		F9F9C053247E41A9005F23CA /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		F9F9C055247E47CB005F23CA /* KeyValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueModel.swift; sourceTree = "<group>"; };
 		F9F9C059247E4F9D005F23CA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -124,6 +130,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F99FB7BA247E584E007E0AD1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F99FB7BE247E5E64007E0AD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F99FB7C3247E6A83007E0AD1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9C01A247E3320005F23CA /* AppDelegate.swift */,
+				F9F9C01C247E3320005F23CA /* SceneDelegate.swift */,
+				F9F9C020247E3320005F23CA /* Main.storyboard */,
+				F9F9C025247E3322005F23CA /* LaunchScreen.storyboard */,
+				F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F99FB7C8247E83B0007E0AD1 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
 		F9F9C00E247E3320005F23CA = {
 			isa = PBXGroup;
 			children = (
@@ -149,15 +191,12 @@
 		F9F9C019247E3320005F23CA /* CarTrackTest */ = {
 			isa = PBXGroup;
 			children = (
+				F99FB7C8247E83B0007E0AD1 /* UserDetails */,
+				F99FB7C3247E6A83007E0AD1 /* Base */,
 				F9F9C051247E3F45005F23CA /* General */,
 				F9F9C04A247E336A005F23CA /* Login */,
 				F9F9C04B247E3384005F23CA /* MapDetails */,
-				F9F9C01A247E3320005F23CA /* AppDelegate.swift */,
-				F9F9C01C247E3320005F23CA /* SceneDelegate.swift */,
-				F9F9C01E247E3320005F23CA /* ViewController.swift */,
-				F9F9C020247E3320005F23CA /* Main.storyboard */,
 				F9F9C023247E3322005F23CA /* Assets.xcassets */,
-				F9F9C025247E3322005F23CA /* LaunchScreen.storyboard */,
 				F9F9C028247E3322005F23CA /* Info.plist */,
 			);
 			path = CarTrackTest;
@@ -184,6 +223,7 @@
 		F9F9C04A247E336A005F23CA /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				F99FB7BE247E5E64007E0AD1 /* Model */,
 				F9F9C05B247E5451005F23CA /* View */,
 				F9F9C04E247E370C005F23CA /* ViewModel */,
 			);
@@ -208,6 +248,7 @@
 		F9F9C051247E3F45005F23CA /* General */ = {
 			isa = PBXGroup;
 			children = (
+				F99FB7BA247E584E007E0AD1 /* Extension */,
 				F9F9C053247E41A9005F23CA /* Enum.swift */,
 				F9F9C055247E47CB005F23CA /* KeyValueModel.swift */,
 			);
@@ -218,7 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				F9F9C04C247E33A7005F23CA /* LoginViewController.swift */,
-				F9F9C04F247E372F005F23CA /* GeneralTableViewCell.swift */,
+				F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,14 +503,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9F9C050247E372F005F23CA /* GeneralTableViewCell.swift in Sources */,
 				F9F9C04D247E33A7005F23CA /* LoginViewController.swift in Sources */,
+				F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */,
 				F9F9C056247E47CB005F23CA /* KeyValueModel.swift in Sources */,
 				F9F9C054247E41A9005F23CA /* Enum.swift in Sources */,
 				F9F9C05A247E4F9D005F23CA /* LoginViewModel.swift in Sources */,
-				F9F9C01F247E3320005F23CA /* ViewController.swift in Sources */,
+				F99FB7CA247E83C6007E0AD1 /* UserListingViewController.swift in Sources */,
 				F9F9C01B247E3320005F23CA /* AppDelegate.swift in Sources */,
+				F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */,
+				F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */,
 				F9F9C01D247E3320005F23CA /* SceneDelegate.swift in Sources */,
+				F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
