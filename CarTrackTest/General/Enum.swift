@@ -8,18 +8,11 @@
 
 import Foundation
 
-enum CellType {
-    case CellTypeTxtField
-    case CellTypeSelection
-    case CellTypeNone
-
-}
-
-
 enum UserFieldType {
     case UserFieldTypeUserName
     case UserFieldTypeCountry
     case UserFieldTypePassword
+    case UserFieldTypeNone
 
 }
 

@@ -15,6 +15,10 @@
 		F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */; };
 		F99FB7CA247E83C6007E0AD1 /* UserListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */; };
 		F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */; };
+		F99FB7CE247F9B67007E0AD1 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */; };
+		F99FB7D0247FA9D9007E0AD1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */; };
+		F99FB7D4247FB6A0007E0AD1 /* UserDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7D3247FB6A0007E0AD1 /* UserDetailService.swift */; };
+		F99FB7D7247FBD63007E0AD1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7D6247FBD63007E0AD1 /* AppConstant.swift */; };
 		F9F9C01B247E3320005F23CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C01A247E3320005F23CA /* AppDelegate.swift */; };
 		F9F9C01D247E3320005F23CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C01C247E3320005F23CA /* SceneDelegate.swift */; };
 		F9F9C022247E3320005F23CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F9C020247E3320005F23CA /* Main.storyboard */; };
@@ -24,7 +28,7 @@
 		F9F9C03D247E3322005F23CA /* CarTrackTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C03C247E3322005F23CA /* CarTrackTestUITests.swift */; };
 		F9F9C04D247E33A7005F23CA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C04C247E33A7005F23CA /* LoginViewController.swift */; };
 		F9F9C054247E41A9005F23CA /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C053247E41A9005F23CA /* Enum.swift */; };
-		F9F9C056247E47CB005F23CA /* KeyValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C055247E47CB005F23CA /* KeyValueModel.swift */; };
+		F9F9C056247E47CB005F23CA /* LoginCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C055247E47CB005F23CA /* LoginCellVM.swift */; };
 		F9F9C05A247E4F9D005F23CA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C059247E4F9D005F23CA /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,10 @@
 		F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingViewController.swift; sourceTree = "<group>"; };
 		F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
+		F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
+		F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		F99FB7D3247FB6A0007E0AD1 /* UserDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailService.swift; sourceTree = "<group>"; };
+		F99FB7D6247FBD63007E0AD1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		F9F9C017247E3320005F23CA /* CarTrackTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F9C01A247E3320005F23CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9F9C01C247E3320005F23CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +83,7 @@
 		F9F9C03E247E3322005F23CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9F9C04C247E33A7005F23CA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F9F9C053247E41A9005F23CA /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
-		F9F9C055247E47CB005F23CA /* KeyValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueModel.swift; sourceTree = "<group>"; };
+		F9F9C055247E47CB005F23CA /* LoginCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCellVM.swift; sourceTree = "<group>"; };
 		F9F9C059247E4F9D005F23CA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,14 +146,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		F99FB7BE247E5E64007E0AD1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		F99FB7C3247E6A83007E0AD1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +164,33 @@
 				F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */,
 			);
 			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		F99FB7D1247FB65E007E0AD1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F9F9C04A247E336A005F23CA /* Login */,
+				F9F9C04B247E3384005F23CA /* MapDetails */,
+				F99FB7C8247E83B0007E0AD1 /* UserDetails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F99FB7D2247FB683007E0AD1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F99FB7D3247FB6A0007E0AD1 /* UserDetailService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F99FB7D5247FB706007E0AD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */,
+				F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		F9F9C00E247E3320005F23CA = {
@@ -191,11 +218,10 @@
 		F9F9C019247E3320005F23CA /* CarTrackTest */ = {
 			isa = PBXGroup;
 			children = (
-				F99FB7C8247E83B0007E0AD1 /* UserDetails */,
+				F99FB7D2247FB683007E0AD1 /* Networking */,
+				F99FB7D1247FB65E007E0AD1 /* Scenes */,
 				F99FB7C3247E6A83007E0AD1 /* Base */,
 				F9F9C051247E3F45005F23CA /* General */,
-				F9F9C04A247E336A005F23CA /* Login */,
-				F9F9C04B247E3384005F23CA /* MapDetails */,
 				F9F9C023247E3322005F23CA /* Assets.xcassets */,
 				F9F9C028247E3322005F23CA /* Info.plist */,
 			);
@@ -223,7 +249,6 @@
 		F9F9C04A247E336A005F23CA /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				F99FB7BE247E5E64007E0AD1 /* Model */,
 				F9F9C05B247E5451005F23CA /* View */,
 				F9F9C04E247E370C005F23CA /* ViewModel */,
 			);
@@ -240,7 +265,9 @@
 		F9F9C04E247E370C005F23CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F9F9C055247E47CB005F23CA /* LoginCellVM.swift */,
 				F9F9C059247E4F9D005F23CA /* LoginViewModel.swift */,
+				F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -248,9 +275,10 @@
 		F9F9C051247E3F45005F23CA /* General */ = {
 			isa = PBXGroup;
 			children = (
+				F99FB7D5247FB706007E0AD1 /* Model */,
 				F99FB7BA247E584E007E0AD1 /* Extension */,
 				F9F9C053247E41A9005F23CA /* Enum.swift */,
-				F9F9C055247E47CB005F23CA /* KeyValueModel.swift */,
+				F99FB7D6247FBD63007E0AD1 /* AppConstant.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -505,15 +533,19 @@
 			files = (
 				F9F9C04D247E33A7005F23CA /* LoginViewController.swift in Sources */,
 				F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */,
-				F9F9C056247E47CB005F23CA /* KeyValueModel.swift in Sources */,
+				F9F9C056247E47CB005F23CA /* LoginCellVM.swift in Sources */,
 				F9F9C054247E41A9005F23CA /* Enum.swift in Sources */,
 				F9F9C05A247E4F9D005F23CA /* LoginViewModel.swift in Sources */,
 				F99FB7CA247E83C6007E0AD1 /* UserListingViewController.swift in Sources */,
+				F99FB7D7247FBD63007E0AD1 /* AppConstant.swift in Sources */,
 				F9F9C01B247E3320005F23CA /* AppDelegate.swift in Sources */,
 				F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */,
 				F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */,
+				F99FB7CE247F9B67007E0AD1 /* StatusModel.swift in Sources */,
 				F9F9C01D247E3320005F23CA /* SceneDelegate.swift in Sources */,
+				F99FB7D0247FA9D9007E0AD1 /* LoginRouter.swift in Sources */,
 				F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */,
+				F99FB7D4247FB6A0007E0AD1 /* UserDetailService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
