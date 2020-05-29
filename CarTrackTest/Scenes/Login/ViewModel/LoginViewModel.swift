@@ -14,7 +14,6 @@ class LoginViewModel {
     
     var items = [LoginCellVM]()
     
-    
     func fetchCellData() {
 
         items.append(getCellData(forType: UserFieldType.UserFieldTypeUserName))
@@ -76,12 +75,6 @@ class LoginViewModel {
 
 extension LoginViewModel
 {
-    enum Const {
-        static let username = "apple"
-        static let password = "123456"
-        static let expiredPassword = "121212"
-    }
-
         
     func validateUserLoginEntry(completionHandler:(StatusModel) -> Void)
        {
@@ -136,5 +129,32 @@ extension LoginViewModel
            }
                
        }
+    
+    func checkUserCredential(completion:(Bool)->Void)
+    {
+            let db = DataManager()
+            db.dbSetup()
+        //    db.insertDataToDB(username: "helloworld", password: "123456", country: "Malaysia")
+        
+        var username:String?
+        var password:String?
+        
+        for model in items{
+                               
+            if (model.type == UserFieldType.UserFieldTypeUserName)
+            {
+                username = model.value
+            }
+            else if (model.type == UserFieldType.UserFieldTypePassword)
+            {
+                password = model.value
+            }
+            
+        }
+        
+        let success = db.checkUserCredential(username: username!, password: password!)
+        
+        completion(success)
+    }
     
 }

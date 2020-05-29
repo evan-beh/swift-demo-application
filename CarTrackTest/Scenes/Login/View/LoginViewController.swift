@@ -52,7 +52,19 @@ class LoginViewController: BaseViewController {
                 {
                     guard let strongSelf = self else { return }
                                  
-                    strongSelf.router.perform(.home, from: strongSelf)
+                    strongSelf.viewModel.checkUserCredential { (success) in
+                                       
+                        if (success)
+                        {
+                            strongSelf.router.perform(.home, from: strongSelf)
+
+                        }
+                        else{
+                            self?.showAlert(message: "Invalid Username or Password")
+
+                        }
+
+                    }
 
                     //proceed next screen
                     

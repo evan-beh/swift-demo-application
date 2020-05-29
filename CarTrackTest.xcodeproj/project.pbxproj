@@ -18,6 +18,8 @@
 		F91509EF2480D64A00513AE0 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509ED2480D64A00513AE0 /* CustomAnnotation.swift */; };
 		F91509F12480E39F00513AE0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F02480E39F00513AE0 /* String+Extension.swift */; };
 		F91509F52480E5C200513AE0 /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F42480E5C200513AE0 /* Routers.swift */; };
+		F91509F82481082600513AE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F72481082600513AE0 /* DataManager.swift */; };
+		F91509FA24811A1000513AE0 /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F924811A1000513AE0 /* UserCredential.swift */; };
 		F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */; };
 		F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */; };
 		F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */; };
@@ -75,6 +77,8 @@
 		F91509ED2480D64A00513AE0 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		F91509F02480E39F00513AE0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		F91509F42480E5C200513AE0 /* Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
+		F91509F72481082600513AE0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F91509F924811A1000513AE0 /* UserCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
 		F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 		F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +158,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F91509F62481081100513AE0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F91509F72481082600513AE0 /* DataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		F99FB7BA247E584E007E0AD1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +223,7 @@
 			children = (
 				F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */,
 				F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */,
+				F91509F924811A1000513AE0 /* UserCredential.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +312,7 @@
 		F9F9C051247E3F45005F23CA /* General */ = {
 			isa = PBXGroup;
 			children = (
+				F91509F62481081100513AE0 /* Manager */,
 				F99FB7D5247FB706007E0AD1 /* Model */,
 				F99FB7BA247E584E007E0AD1 /* Extension */,
 				F9F9C053247E41A9005F23CA /* Enum.swift */,
@@ -555,7 +569,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91509FA24811A1000513AE0 /* UserCredential.swift in Sources */,
 				F91509EB2480D5CC00513AE0 /* MapDetailViewController.swift in Sources */,
+				F91509F82481082600513AE0 /* DataManager.swift in Sources */,
 				F9DF8E142480BAE600865998 /* MasterViewController.swift in Sources */,
 				F9F9C04D247E33A7005F23CA /* LoginViewController.swift in Sources */,
 				F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */,

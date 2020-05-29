@@ -39,7 +39,7 @@ protocol Routers {
 
 }
 
- class MainPageRouter: NSObject, Routers {
+ class MainPageRouter: Routers {
     
     func perform(_ segue: MasterSegue, from source: MasterViewController) {
                

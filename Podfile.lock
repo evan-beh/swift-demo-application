@@ -1,20 +1,26 @@
 PODS:
   - ADCountryPicker (2.1.0)
   - Alamofire (5.2.1)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
 
 DEPENDENCIES:
   - ADCountryPicker (~> 2.1.0)
   - Alamofire (~> 5.2)
+  - SQLite.swift (~> 0.12.0)
 
 SPEC REPOS:
   trunk:
     - ADCountryPicker
     - Alamofire
+    - SQLite.swift
 
 SPEC CHECKSUMS:
   ADCountryPicker: 502cee76a30ea1c3834eb0df170ce635691655c9
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
-PODFILE CHECKSUM: 8b4d4865e2e6762ba6208f9e63786260b7014188
+PODFILE CHECKSUM: b62e49486ae13c0e4273741cc60d1c1ee0c73c0d
 
 COCOAPODS: 1.8.4

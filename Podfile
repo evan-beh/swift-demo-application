@@ -6,6 +6,7 @@ target 'CarTrackTest' do
   use_frameworks!
 pod 'Alamofire', '~> 5.2'
 pod 'ADCountryPicker', '~> 2.1.0'
+pod 'SQLite.swift', '~> 0.12.0'
 
   # Pods for CarTrackTest
 
