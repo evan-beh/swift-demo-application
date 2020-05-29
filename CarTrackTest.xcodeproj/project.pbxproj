@@ -10,15 +10,19 @@
 		352AA4C9CDB6467D92D64C8C /* Pods_CarTrackTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A113F29615BBBFD509D5B65 /* Pods_CarTrackTest.framework */; };
 		5FE886363FCAB036EC7138CD /* Pods_CarTrackTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92AA2A41A51F4A6C62610F3 /* Pods_CarTrackTestTests.framework */; };
 		E24783E771F9D939E8CEC80F /* Pods_CarTrackTest_CarTrackTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE4D92D2D53F509641724356 /* Pods_CarTrackTest_CarTrackTestUITests.framework */; };
+		F91509E52480C23C00513AE0 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509E42480C23C00513AE0 /* ListingTableViewCell.swift */; };
+		F91509E72480C5F500513AE0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509E62480C5F500513AE0 /* UIView+Extension.swift */; };
+		F91509E92480CE6000513AE0 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509E82480CE6000513AE0 /* DetailsTableViewCell.swift */; };
 		F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */; };
 		F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */; };
 		F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */; };
-		F99FB7CA247E83C6007E0AD1 /* UserListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */; };
 		F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */; };
 		F99FB7CE247F9B67007E0AD1 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */; };
 		F99FB7D0247FA9D9007E0AD1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */; };
 		F99FB7D4247FB6A0007E0AD1 /* UserDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7D3247FB6A0007E0AD1 /* UserDetailService.swift */; };
 		F99FB7D7247FBD63007E0AD1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7D6247FBD63007E0AD1 /* AppConstant.swift */; };
+		F9DF8E142480BAE600865998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF8E132480BAE600865998 /* MasterViewController.swift */; };
+		F9DF8E162480BAF600865998 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF8E152480BAF600865998 /* DetailViewController.swift */; };
 		F9F9C01B247E3320005F23CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C01A247E3320005F23CA /* AppDelegate.swift */; };
 		F9F9C01D247E3320005F23CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9C01C247E3320005F23CA /* SceneDelegate.swift */; };
 		F9F9C022247E3320005F23CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F9C020247E3320005F23CA /* Main.storyboard */; };
@@ -59,15 +63,19 @@
 		CFE9791FFD3FB094CED431B5 /* Pods-CarTrackTest-CarTrackTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackTest-CarTrackTestUITests.release.xcconfig"; path = "Target Support Files/Pods-CarTrackTest-CarTrackTestUITests/Pods-CarTrackTest-CarTrackTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF67FFD3A0BA9657652AB516 /* Pods-CarTrackTest-CarTrackTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarTrackTest-CarTrackTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-CarTrackTest-CarTrackTestUITests/Pods-CarTrackTest-CarTrackTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E92AA2A41A51F4A6C62610F3 /* Pods_CarTrackTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarTrackTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91509E42480C23C00513AE0 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
+		F91509E62480C5F500513AE0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F91509E82480CE6000513AE0 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 		F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListingViewController.swift; sourceTree = "<group>"; };
 		F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		F99FB7D3247FB6A0007E0AD1 /* UserDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailService.swift; sourceTree = "<group>"; };
 		F99FB7D6247FBD63007E0AD1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		F9DF8E132480BAE600865998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F9DF8E152480BAF600865998 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F9F9C017247E3320005F23CA /* CarTrackTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarTrackTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F9C01A247E3320005F23CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9F9C01C247E3320005F23CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */,
+				F91509E62480C5F500513AE0 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -161,7 +170,10 @@
 		F99FB7C8247E83B0007E0AD1 /* UserDetails */ = {
 			isa = PBXGroup;
 			children = (
-				F99FB7C9247E83C6007E0AD1 /* UserListingViewController.swift */,
+				F9DF8E132480BAE600865998 /* MasterViewController.swift */,
+				F9DF8E152480BAF600865998 /* DetailViewController.swift */,
+				F91509E42480C23C00513AE0 /* ListingTableViewCell.swift */,
+				F91509E82480CE6000513AE0 /* DetailsTableViewCell.swift */,
 			);
 			path = UserDetails;
 			sourceTree = "<group>";
@@ -531,18 +543,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DF8E142480BAE600865998 /* MasterViewController.swift in Sources */,
 				F9F9C04D247E33A7005F23CA /* LoginViewController.swift in Sources */,
 				F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */,
 				F9F9C056247E47CB005F23CA /* LoginCellVM.swift in Sources */,
 				F9F9C054247E41A9005F23CA /* Enum.swift in Sources */,
 				F9F9C05A247E4F9D005F23CA /* LoginViewModel.swift in Sources */,
-				F99FB7CA247E83C6007E0AD1 /* UserListingViewController.swift in Sources */,
 				F99FB7D7247FBD63007E0AD1 /* AppConstant.swift in Sources */,
+				F9DF8E162480BAF600865998 /* DetailViewController.swift in Sources */,
 				F9F9C01B247E3320005F23CA /* AppDelegate.swift in Sources */,
 				F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */,
+				F91509E52480C23C00513AE0 /* ListingTableViewCell.swift in Sources */,
 				F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */,
+				F91509E72480C5F500513AE0 /* UIView+Extension.swift in Sources */,
 				F99FB7CE247F9B67007E0AD1 /* StatusModel.swift in Sources */,
 				F9F9C01D247E3320005F23CA /* SceneDelegate.swift in Sources */,
+				F91509E92480CE6000513AE0 /* DetailsTableViewCell.swift in Sources */,
 				F99FB7D0247FA9D9007E0AD1 /* LoginRouter.swift in Sources */,
 				F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */,
 				F99FB7D4247FB6A0007E0AD1 /* UserDetailService.swift in Sources */,
