@@ -9,14 +9,13 @@
 import UIKit
 import ADCountryPicker
 
-
 class LoginViewController: BaseViewController {
  
   
     @IBOutlet weak var tableView: UITableView!
   
     let viewModel = LoginViewModel()
-    var router = MainLoginRouter()
+    var router = MainPageRouter()
     let picker = ADCountryPicker()
     
     @IBOutlet weak var btnLoginClicked: UIButton!
@@ -28,6 +27,17 @@ class LoginViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    
     func setupView ()
     {
         self.tableView.delegate = self
@@ -36,12 +46,13 @@ class LoginViewController: BaseViewController {
         self.btnLoginClicked.addAction(for: .touchUpInside)
         { [weak self] btn in
             self?.view.endEditing(true)
+            self?.resignFirstResponder()
             self?.viewModel.validateUserLoginEntry(completionHandler: {[weak self] (status) in
                 if (status.isSuccess)
                 {
                     guard let strongSelf = self else { return }
                                  
-                    strongSelf.router.perform(.login, from: strongSelf)
+                    strongSelf.router.perform(.home, from: strongSelf)
 
                     //proceed next screen
                     
@@ -89,6 +100,7 @@ extension LoginViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.setModel(object: cellModel)
 
+            cell.btnOne.setTitle("Select Country", for: .normal)
             cell.btnOne.addAction(for: .touchUpInside) { (button) in
                 
                 let picker = ADCountryPicker()

@@ -38,6 +38,7 @@ class LoginTableViewCell: UITableViewCell , UITextFieldDelegate{
     //        })
             
             setLayoutType(layoutType: LayoutType.LayoutTypeNormal)
+        
         }
 
         override func setSelected(_ selected: Bool, animated: Bool) {

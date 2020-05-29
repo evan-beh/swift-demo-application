@@ -1,18 +1,19 @@
 //
 //  DetailViewController.swift
-//  eweeqweqwe
+//  CarTrackTest
 //
 //  Created by Evan Beh on 29/05/2020.
 //  Copyright © 2020 Evan Beh. All rights reserved.
 //
 
 import UIKit
+import MapKit
+
 
 
 class DetailViewController: UIViewController {
 
     
-
     enum DisplayCell
     {
         case DisplayCellName
@@ -25,10 +26,13 @@ class DetailViewController: UIViewController {
         case DisplayCellGeo
 
     }
+
+    @IBOutlet weak var ibMapView: MKMapView!
     
     @IBOutlet weak var ibTableView: UITableView!
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 
+   var router = MainPageRouter()
 
     
     let array:[DisplayCell] = [ DisplayCell.DisplayCellName,
@@ -39,16 +43,15 @@ class DetailViewController: UIViewController {
                                 DisplayCell.DisplayCellPhone,
                                 DisplayCell.DisplayCellWebsite,
                                 DisplayCell.DisplayCellCompany,
-                                DisplayCell.DisplayCellGeo]
+    ]
     
+    var detailItem: UserModel? {
+        didSet {
     
-    func configureView() {
-        // Update the user interface for the detail item.
-      
-        
-        
+        }
     }
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -56,14 +59,63 @@ class DetailViewController: UIViewController {
         self.ibTableView.delegate = self
         self.ibTableView.dataSource = self
         configureView()
+
     }
 
-    var detailItem: UserModel? {
-        didSet {
-            // Update the view.
-         //   configureView()
-        }
+    
+    func configureView() {
+        // Update the user interface for the detail item.
+      
+        self.ibTableView.contentInset = UIEdgeInsets(top: 200, left: 0, bottom: 0, right: 0)
+
+       // btnMapClicked.addTarget(self, action: #selector(showMapView), for: .touchUpInside)
+
+        
+        let button:UIButton = UIButton(frame: self.view.frame)
+        button.backgroundColor = .clear
+        button.addTarget(self, action:#selector(showMapView), for: .touchUpInside)
+        self.ibTableView.backgroundView = button
+
+        
+        
+        if let lat = detailItem?.address?.geo?.lat, let lng = detailItem?.address?.geo?.lng
+             {
+             
+                 var location:CLLocationCoordinate2D! //location object
+
+                 location = CLLocationCoordinate2D(latitude:lat.toDouble() ?? 0.0, longitude: lng.toDouble() ?? 0.0)
+
+                 location = CLLocationCoordinate2D(latitude:3.1420962, longitude:101.6232076)
+
+
+                 let annotation  = CustomAnnotation.initUserCompany(title: detailItem?.name ?? "-", address: detailItem?.address?.street ?? "", companyName: detailItem?.company?.name ?? "", coordinate:
+                     location)
+                 
+                 self.ibMapView.addAnnotations([annotation])
+
+                 let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
+                 let region = MKCoordinateRegion(center: location, span: span)
+                 self.ibMapView.setRegion(region, animated: true)
+
+             }
+        
     }
+    
+    @objc func showMapView()
+    {
+        router.perform(.userMap, from: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          if segue.identifier == "showMap" {
+              let controller = (segue.destination as! MapDetailViewController)
+                               controller.detailItem = detailItem
+//                               controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+//                               controller.navigationItem.leftItemsSupplementBackButton = true
+                               controller.title = detailItem?.name
+          }
+      }
 
 
 }
@@ -83,6 +135,8 @@ extension DetailViewController: UITableViewDelegate, UITableViewDataSource
 
         return cell
     }
+
+
     
     func displayCellForRow(type:DisplayCell, cell:DetailsTableViewCell)
     {

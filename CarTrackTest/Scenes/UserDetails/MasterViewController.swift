@@ -1,6 +1,6 @@
 //
 //  MasterViewController.swift
-//  eweeqweqwe
+//  CarTrackTest
 //
 //  Created by Evan Beh on 29/05/2020.
 //  Copyright © 2020 Evan Beh. All rights reserved.
@@ -8,24 +8,26 @@
 
 import UIKit
 
+
 class MasterViewController: UITableViewController {
 
-    var detailViewController: DetailViewController? = nil
     var objects = [Any]()
-    let viewModel = UserDetailService()
-
+    let service = UserDetailService()
+    var router = MainPageRouter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         retreiveData();
+        self.title = ""
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Login", style: .plain, target: self, action: #selector(showLogin))
 
     }
     
     
     func retreiveData()
     {
-        viewModel.requestFromServerUserDetails { (array, success) in
+        service.requestFromServerUserDetails { (array, success) in
          
             if (success)
             {
@@ -34,6 +36,12 @@ class MasterViewController: UITableViewController {
                 
             }
         }
+    }
+    
+    
+    @objc func showLogin()
+    {
+        router.perform(.login, from: self)
     }
 
     // MARK: - Segues
@@ -47,7 +55,6 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
                 controller.title = object.name
-                detailViewController = controller
             }
         }
     }
@@ -68,8 +75,11 @@ class MasterViewController: UITableViewController {
         cell.object = object
         return cell
     }
+  
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+      {
+        router.perform(.userDetails, from: self)
 
- 
-
+      }
 }
 

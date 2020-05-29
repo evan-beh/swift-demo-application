@@ -13,12 +13,16 @@
 		F91509E52480C23C00513AE0 /* ListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509E42480C23C00513AE0 /* ListingTableViewCell.swift */; };
 		F91509E72480C5F500513AE0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509E62480C5F500513AE0 /* UIView+Extension.swift */; };
 		F91509E92480CE6000513AE0 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509E82480CE6000513AE0 /* DetailsTableViewCell.swift */; };
+		F91509EB2480D5CC00513AE0 /* MapDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509EA2480D5CC00513AE0 /* MapDetailViewController.swift */; };
+		F91509EE2480D64A00513AE0 /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509EC2480D64A00513AE0 /* CustomAnnotationView.swift */; };
+		F91509EF2480D64A00513AE0 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509ED2480D64A00513AE0 /* CustomAnnotation.swift */; };
+		F91509F12480E39F00513AE0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F02480E39F00513AE0 /* String+Extension.swift */; };
+		F91509F52480E5C200513AE0 /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F42480E5C200513AE0 /* Routers.swift */; };
 		F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */; };
 		F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */; };
 		F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */; };
 		F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */; };
 		F99FB7CE247F9B67007E0AD1 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */; };
-		F99FB7D0247FA9D9007E0AD1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */; };
 		F99FB7D4247FB6A0007E0AD1 /* UserDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7D3247FB6A0007E0AD1 /* UserDetailService.swift */; };
 		F99FB7D7247FBD63007E0AD1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7D6247FBD63007E0AD1 /* AppConstant.swift */; };
 		F9DF8E142480BAE600865998 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF8E132480BAE600865998 /* MasterViewController.swift */; };
@@ -66,12 +70,16 @@
 		F91509E42480C23C00513AE0 /* ListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingTableViewCell.swift; sourceTree = "<group>"; };
 		F91509E62480C5F500513AE0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		F91509E82480CE6000513AE0 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		F91509EA2480D5CC00513AE0 /* MapDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDetailViewController.swift; sourceTree = "<group>"; };
+		F91509EC2480D64A00513AE0 /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
+		F91509ED2480D64A00513AE0 /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		F91509F02480E39F00513AE0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F91509F42480E5C200513AE0 /* Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
 		F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 		F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F99FB7CB247E858C007E0AD1 /* LoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewCell.swift; sourceTree = "<group>"; };
 		F99FB7CD247F9B67007E0AD1 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
-		F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		F99FB7D3247FB6A0007E0AD1 /* UserDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailService.swift; sourceTree = "<group>"; };
 		F99FB7D6247FBD63007E0AD1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		F9DF8E132480BAE600865998 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +159,7 @@
 			children = (
 				F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */,
 				F91509E62480C5F500513AE0 /* UIView+Extension.swift */,
+				F91509F02480E39F00513AE0 /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -158,6 +167,7 @@
 		F99FB7C3247E6A83007E0AD1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F91509F42480E5C200513AE0 /* Routers.swift */,
 				F9F9C01A247E3320005F23CA /* AppDelegate.swift */,
 				F9F9C01C247E3320005F23CA /* SceneDelegate.swift */,
 				F9F9C020247E3320005F23CA /* Main.storyboard */,
@@ -270,6 +280,9 @@
 		F9F9C04B247E3384005F23CA /* MapDetails */ = {
 			isa = PBXGroup;
 			children = (
+				F91509ED2480D64A00513AE0 /* CustomAnnotation.swift */,
+				F91509EC2480D64A00513AE0 /* CustomAnnotationView.swift */,
+				F91509EA2480D5CC00513AE0 /* MapDetailViewController.swift */,
 			);
 			path = MapDetails;
 			sourceTree = "<group>";
@@ -279,7 +292,6 @@
 			children = (
 				F9F9C055247E47CB005F23CA /* LoginCellVM.swift */,
 				F9F9C059247E4F9D005F23CA /* LoginViewModel.swift */,
-				F99FB7CF247FA9D9007E0AD1 /* LoginRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -543,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91509EB2480D5CC00513AE0 /* MapDetailViewController.swift in Sources */,
 				F9DF8E142480BAE600865998 /* MasterViewController.swift in Sources */,
 				F9F9C04D247E33A7005F23CA /* LoginViewController.swift in Sources */,
 				F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */,
@@ -554,14 +567,17 @@
 				F9F9C01B247E3320005F23CA /* AppDelegate.swift in Sources */,
 				F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */,
 				F91509E52480C23C00513AE0 /* ListingTableViewCell.swift in Sources */,
+				F91509F12480E39F00513AE0 /* String+Extension.swift in Sources */,
 				F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */,
 				F91509E72480C5F500513AE0 /* UIView+Extension.swift in Sources */,
 				F99FB7CE247F9B67007E0AD1 /* StatusModel.swift in Sources */,
 				F9F9C01D247E3320005F23CA /* SceneDelegate.swift in Sources */,
 				F91509E92480CE6000513AE0 /* DetailsTableViewCell.swift in Sources */,
-				F99FB7D0247FA9D9007E0AD1 /* LoginRouter.swift in Sources */,
+				F91509EF2480D64A00513AE0 /* CustomAnnotation.swift in Sources */,
 				F99FB7CC247E858C007E0AD1 /* LoginTableViewCell.swift in Sources */,
+				F91509EE2480D64A00513AE0 /* CustomAnnotationView.swift in Sources */,
 				F99FB7D4247FB6A0007E0AD1 /* UserDetailService.swift in Sources */,
+				F91509F52480E5C200513AE0 /* Routers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
