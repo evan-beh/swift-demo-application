@@ -20,6 +20,7 @@ This is a project to demo a user mobile application using swift.
 1. Usage of MVVM.
 2. View routing using storyboad segue and router.
 3. Usage of swift codable to convert json model.
+4. Listing with pagination.
 
 ## TO USE
 1. Pod Install and ready to use. 
