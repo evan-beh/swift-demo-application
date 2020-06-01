@@ -30,5 +30,61 @@ class CarTrackTestTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testSuccessLogin()
+    {
+        
+        let vm = LoginViewModel()
+        
+        vm.fetchCellData()
+        
+        
+        for model in vm.items
+        {
+            if (model.type == UserFieldType.UserFieldTypeUserName)
+            {
+                model.value = "helloworld"
+            }
+            else if (model.type == UserFieldType.UserFieldTypePassword)
+            {
+                model.value = "123456"
+
+            }
+        }
+        vm.checkUserCredential { (success) in
+            
+            XCTAssertEqual(success, true)
+
+        }
+
+    }
+    
+    func testFailLogin()
+    {
+        
+        let vm = LoginViewModel()
+        
+        vm.fetchCellData()
+        
+        
+        for model in vm.items
+        {
+            if (model.type == UserFieldType.UserFieldTypeUserName)
+            {
+                model.value = "helloworld111"
+            }
+            else if (model.type == UserFieldType.UserFieldTypePassword)
+            {
+                model.value = "111"
+
+            }
+        }
+        vm.checkUserCredential { (success) in
+            
+            XCTAssertEqual(success, false)
+
+        }
+
+    }
 
 }
