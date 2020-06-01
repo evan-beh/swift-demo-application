@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class MasterViewController: UITableViewController {
 
     var objects = [Any]()
@@ -18,10 +17,24 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        retreiveData();
-        self.title = ""
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Login", style: .plain, target: self, action: #selector(showLogin))
+        retreiveData()
+        configureView()
+        showLogin()
 
+
+     
+    }
+    
+    func configureView()
+    {
+        self.title = ""
+           self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Login", style: .plain, target: self, action: #selector(showLogin))
+        self.tableView.backgroundColor = .white
+        self.tableView.setTableViewFooter {
+            
+            self.retreiveData()
+
+        }
     }
     
     
@@ -31,7 +44,8 @@ class MasterViewController: UITableViewController {
          
             if (success)
             {
-                self.objects = array!
+                self.objects.append(contentsOf: array!)
+                self.tableView.stopRefreshing()
                 self.tableView.reloadData()
                 
             }
@@ -81,5 +95,16 @@ class MasterViewController: UITableViewController {
         router.perform(.userDetails, from: self)
 
       }
+    
+
+    
+     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let lastSectionIndex = tableView.numberOfSections - 1
+        let lastRowIndex = tableView.numberOfRows(inSection: lastSectionIndex) - 1
+        if indexPath.section ==  lastSectionIndex && indexPath.row == lastRowIndex {
+            self.tableView.triggerFooterAction()
+
+        }
+    }
 }
 

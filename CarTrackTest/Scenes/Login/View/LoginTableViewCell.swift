@@ -75,13 +75,19 @@ class LoginTableViewCell: UITableViewCell , UITextFieldDelegate{
         {
             switch layoutType {
             case .LayoutTypeHighlight:
-                ibPadding?.backgroundColor = .green
+                ibPadding?.backgroundColor = .systemBlue
+                lblTitle?.textColor = .systemBlue
+                
                 break
             case .LayoutTypeError:
-                ibPadding?.backgroundColor = .red
+                ibPadding?.backgroundColor = .systemRed
+                lblTitle?.textColor = .systemRed
+
                 break
             default:
                 ibPadding?.backgroundColor = .black
+                lblTitle?.textColor = .black
+
                 break
                 
             }

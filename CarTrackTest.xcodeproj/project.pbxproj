@@ -20,6 +20,7 @@
 		F91509F52480E5C200513AE0 /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F42480E5C200513AE0 /* Routers.swift */; };
 		F91509F82481082600513AE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F72481082600513AE0 /* DataManager.swift */; };
 		F91509FA24811A1000513AE0 /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F924811A1000513AE0 /* UserCredential.swift */; };
+		F91509FC24812D3000513AE0 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509FB24812D3000513AE0 /* UITableView+Extension.swift */; };
 		F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */; };
 		F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */; };
 		F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */; };
@@ -79,6 +80,7 @@
 		F91509F42480E5C200513AE0 /* Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
 		F91509F72481082600513AE0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F91509F924811A1000513AE0 /* UserCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
+		F91509FB24812D3000513AE0 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 		F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */,
 				F91509E62480C5F500513AE0 /* UIView+Extension.swift */,
 				F91509F02480E39F00513AE0 /* String+Extension.swift */,
+				F91509FB24812D3000513AE0 /* UITableView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				F91509EE2480D64A00513AE0 /* CustomAnnotationView.swift in Sources */,
 				F99FB7D4247FB6A0007E0AD1 /* UserDetailService.swift in Sources */,
 				F91509F52480E5C200513AE0 /* Routers.swift in Sources */,
+				F91509FC24812D3000513AE0 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

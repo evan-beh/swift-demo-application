@@ -22,7 +22,7 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        configureView()
         viewModel.fetchCellData()
         // Do any additional setup after loading the view.
     }
@@ -38,7 +38,7 @@ class LoginViewController: BaseViewController {
     }
     
     
-    func setupView ()
+    func configureView ()
     {
         self.tableView.delegate = self
         self.tableView.dataSource = self

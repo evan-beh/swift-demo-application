@@ -15,6 +15,7 @@ class ListingTableViewCell: UITableViewCell {
     @IBOutlet weak var ibProfileContentView: UIView!
     @IBOutlet weak var ibProfileView: UIImageView!
     
+    @IBOutlet weak var lblTitle3: UILabel!
     @IBOutlet weak var ibContentView: UIView!
     
     
@@ -37,14 +38,18 @@ class ListingTableViewCell: UITableViewCell {
                 label1.text = userModel.name
             }
             if let label2 = lblTitle2 {
-                label2.text = userModel.company?.name
+                label2.text = userModel.email
+            }
+            if let label3 = lblTitle3 {
+                label3.text = userModel.company?.name
             }
         }
         
         ibProfileView.image = UIImage(imageLiteralResourceName: "avatar").withRenderingMode(.alwaysTemplate)
         ibProfileView.tintColor = UIColor.lightGray
 
-
+        
+        self.ibContentView.roundBorders(value: 6.0, borderColor: .white)
         self.contentView.setCardView()
         
         
