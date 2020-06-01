@@ -21,6 +21,7 @@
 		F91509F82481082600513AE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F72481082600513AE0 /* DataManager.swift */; };
 		F91509FA24811A1000513AE0 /* UserCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509F924811A1000513AE0 /* UserCredential.swift */; };
 		F91509FC24812D3000513AE0 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91509FB24812D3000513AE0 /* UITableView+Extension.swift */; };
+		F91509FF2484D09900513AE0 /* db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = F91509FE2484CD4D00513AE0 /* db.sqlite3 */; };
 		F99FB7BC247E5862007E0AD1 /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */; };
 		F99FB7C0247E5E6E007E0AD1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */; };
 		F99FB7C5247E6AAA007E0AD1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */; };
@@ -81,6 +82,7 @@
 		F91509F72481082600513AE0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		F91509F924811A1000513AE0 /* UserCredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCredential.swift; sourceTree = "<group>"; };
 		F91509FB24812D3000513AE0 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		F91509FE2484CD4D00513AE0 /* db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite3; sourceTree = "<group>"; };
 		F99FB7BB247E5862007E0AD1 /* UIControl+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 		F99FB7BF247E5E6E007E0AD1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		F99FB7C4247E6AAA007E0AD1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 				F91509F72481082600513AE0 /* DataManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		F91509FD2484CD3B00513AE0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F91509FE2484CD4D00513AE0 /* db.sqlite3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F99FB7BA247E584E007E0AD1 /* Extension */ = {
@@ -256,6 +266,7 @@
 		F9F9C019247E3320005F23CA /* CarTrackTest */ = {
 			isa = PBXGroup;
 			children = (
+				F91509FD2484CD3B00513AE0 /* Resources */,
 				F99FB7D2247FB683007E0AD1 /* Networking */,
 				F99FB7D1247FB65E007E0AD1 /* Scenes */,
 				F99FB7C3247E6A83007E0AD1 /* Base */,
@@ -442,6 +453,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91509FF2484D09900513AE0 /* db.sqlite3 in Resources */,
 				F9F9C027247E3322005F23CA /* LaunchScreen.storyboard in Resources */,
 				F9F9C024247E3322005F23CA /* Assets.xcassets in Resources */,
 				F9F9C022247E3320005F23CA /* Main.storyboard in Resources */,

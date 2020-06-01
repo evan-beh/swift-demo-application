@@ -21,9 +21,13 @@ class DataManager: NSObject {
     
     func dbSetup()
        {
-           let databaseFileName = "db.sqlite3"
-           let databaseFilePath = "\(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])/\(databaseFileName)"
-           db = try! Connection(databaseFilePath)
+      let dbUrl = Bundle.main.url(forResource: "db", withExtension: "sqlite3")!
+      let dbPath = dbUrl.path
+        db = try! Connection(dbPath)
+
+      //  let databaseFileName = "db.sqlite3"
+           //let databaseFilePath = "\(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])/\(databaseFileName)"
+       // db = try! Connection(databaseFilePath)
 
            
            try! db!.run(tblUser.create(ifNotExists: true) { t in
